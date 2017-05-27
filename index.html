@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>RPS-Multiplayer</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/css/cyborg.min.css">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <h1 class="text-center">Rock Paper Scissors!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div id="input-container" class="col-sm-12 col-md-8 col-md-offset-2">
+                    <input id="player-name-input" class="form-control" type="text" placeholder="Username">
+                    <button id="add-player" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+            <div id="game-area" class="row">
+                <div id="player-1-area" class="col-md-3 col-md-offset-1 col-sm-4 player-area">
+                    <h3 class="">
+                        Player 1
+                    </h3>
+                    <h4 id="player-1-name"></h4>
+                    <div id="player-1-buttons" class="player-buttons text-center">
+                    </div>
+                    <div id="player-1-record">
+                        Wins: <span id="player-1-wins"></span>
+                        Losses: <span id="player-1-losses"></span>
+                        Ties: <span id="player-1-ties"></span>
+                    </div>
+                </div>
+                <div id="score-area" class="col-sm-4">
+                    <h4 id="game-result" class="text-center"></h4>
+                </div>
+                <div id="player-2-area" class="col-md-3 col-sm-4 player-area">
+                    <h3 class="">
+                        Player 2
+                    </h3>
+                    <h4 id="player-2-name"></h4>
+                    <div id="player-2-buttons" class="player-buttons text-center">
+                    </div>
+                    <div id="player-2-record">
+                        Wins: <span id="player-2-wins"></span>
+                        Losses: <span id="player-2-losses"></span>
+                        Ties: <span id="player-2-ties"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

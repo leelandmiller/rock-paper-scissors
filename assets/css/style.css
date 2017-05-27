@@ -1,0 +1,20 @@
+#input-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+}
+
+#submit-user {
+    margin: 0px 10px;
+}
+
+#game-area {
+    margin-top: 20px;
+}
+
+.player-area {
+    background-color: #202020;
+    border-radius: 8px;
+    padding: 10px;
+}
