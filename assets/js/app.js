@@ -187,7 +187,10 @@ $('#game-area').on('click', '.choice-btn', function() {
             var allChoicesMade = true;
             var choices = [];
             snap.forEach(function(childSnap) {
-                allChoicesMade = childSnap.child('choice').exists();
+                if (allChoicesMade) {
+                    allChoicesMade = childSnap.child('choice').exists();
+                }
+
                 choices.push(childSnap.val().choice);
             });
 
